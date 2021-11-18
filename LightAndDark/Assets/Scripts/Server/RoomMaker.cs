@@ -9,14 +9,30 @@ public class RoomMaker : MonoBehaviourPunCallbacks
 {
     public InputField inputMake;
     public InputField inputJoin;
+    public Text errorText;
     public void RoomMake()
     {
-        PhotonNetwork.CreateRoom(inputMake.text);
+        print(inputMake.text);
+        if (inputMake.text != "")
+        {
+            PhotonNetwork.CreateRoom(inputMake.text);
+        }
+        else
+        {
+            errorText.enabled = true;
+        }
     }
 
     public void RoomJoin()
     {
-        PhotonNetwork.JoinRoom(inputJoin.text);
+        if (inputJoin.text != "")
+        {
+            PhotonNetwork.JoinRoom(inputJoin.text);
+        }
+        else
+        {
+            errorText.enabled = true;
+        }
     }
 
     public override void OnJoinedRoom()
