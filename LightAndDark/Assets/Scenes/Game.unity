@@ -1323,7 +1323,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Waiting For Players
+  m_Text: 'Waiting For Players
+
+    Movement is Locked
+
+    Until Game Start'
 --- !u!222 &645429703
 CanvasRenderer:
   m_ObjectHideFlags: 0
