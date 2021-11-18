@@ -4,6 +4,8 @@ There are two player characters in Light and Dark, Sun and Moon. Sun (the blue r
 Moon (the pink bear) needs to extinguish these lights by doing the same. 
 After two minutes the time runs out and whoever has the most points wins. 
 Each player can sabotage the other by shooting projectiles at each other in an attempt to knock the player off the platform, to give some time where you can gain points.
+If your the first player in a lobby then the movement will be locked and you will see a waiting for players text, 
+the game will start when a second player joins, then movement will be unlocked.
 
 Controls
 
